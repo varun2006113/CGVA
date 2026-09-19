@@ -1,16 +1,16 @@
 import { detectInputType } from '../src/utils/inputDetection.js';
-import { getGeneInfo } from '../api/services/ncbiService.js';
-import { getClinVarVariantsForGene } from '../api/services/clinvarService.js';
-import { getProteinForGene } from '../api/services/uniprotService.js';
-import { getPDBStructures, getAlphaFoldStructure } from '../api/services/structureService.js';
+import { getGeneInfo } from '../lib/services/ncbiService.js';
+import { getClinVarVariantsForGene } from '../lib/services/clinvarService.js';
+import { getProteinForGene } from '../lib/services/uniprotService.js';
+import { getPDBStructures, getAlphaFoldStructure } from '../lib/services/structureService.js';
 
-import { getVariantInfo } from '../api/services/variantService.js';
-import { getClinVarEvidence, getClinVarForVariant } from '../api/services/clinvarService.js';
-import { getProteinContextForVariant } from '../api/services/proteinContextService.js';
-import { getStructuralContextForVariant } from '../api/services/structureContextService.js';
-import { getFunctionalPredictionsForVariant } from '../api/services/predictorService.js';
-import { reconcileVariantEvidence } from '../api/services/reconciliationService.js';
-import { generateEvidenceSummary } from '../api/services/evidenceSummaryService.js';
+import { getVariantInfo } from '../lib/services/variantService.js';
+import { getClinVarEvidence, getClinVarForVariant } from '../lib/services/clinvarService.js';
+import { getProteinContextForVariant } from '../lib/services/proteinContextService.js';
+import { getStructuralContextForVariant } from '../lib/services/structureContextService.js';
+import { getFunctionalPredictionsForVariant } from '../lib/services/predictorService.js';
+import { reconcileVariantEvidence } from '../lib/services/reconciliationService.js';
+import { generateEvidenceSummary } from '../lib/services/evidenceSummaryService.js';
 
 async function runStage15Regression() {
   console.log('=== Stage 15 Full Regression Verification (Stages 1–14) ===\n');

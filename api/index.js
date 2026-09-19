@@ -1,15 +1,15 @@
-import { getGeneInfo } from './_services/ncbiService.js';
-import { getClinVarVariantsForGene, getClinVarForVariant } from './_services/clinvarService.js';
-import { getProteinForGene } from './_services/uniprotService.js';
-import { getPDBStructures, getAlphaFoldStructure } from './_services/structureService.js';
-import { getVariantInfo } from './_services/variantService.js';
-import { getProteinContextForVariant } from './_services/proteinContextService.js';
-import { getStructuralContextForVariant } from './_services/structureContextService.js';
-import { getFunctionalPredictionsForVariant } from './_services/predictorService.js';
-import { reconcileVariantEvidence } from './_services/reconciliationService.js';
-import { generateEvidenceSummary } from './_services/evidenceSummaryService.js';
-import { getGeneAnalytics } from './_services/analyticsService.js';
-import { analyzeVariantComparison } from './_services/comparisonService.js';
+import { getGeneInfo } from '../lib/services/ncbiService.js';
+import { getClinVarVariantsForGene, getClinVarForVariant } from '../lib/services/clinvarService.js';
+import { getProteinForGene } from '../lib/services/uniprotService.js';
+import { getPDBStructures, getAlphaFoldStructure } from '../lib/services/structureService.js';
+import { getVariantInfo } from '../lib/services/variantService.js';
+import { getProteinContextForVariant } from '../lib/services/proteinContextService.js';
+import { getStructuralContextForVariant } from '../lib/services/structureContextService.js';
+import { getFunctionalPredictionsForVariant } from '../lib/services/predictorService.js';
+import { reconcileVariantEvidence } from '../lib/services/reconciliationService.js';
+import { generateEvidenceSummary } from '../lib/services/evidenceSummaryService.js';
+import { getGeneAnalytics } from '../lib/services/analyticsService.js';
+import { analyzeVariantComparison } from '../lib/services/comparisonService.js';
 
 /**
  * Single Vercel Serverless Function Entry Point & Router
