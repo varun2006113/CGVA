@@ -1,26 +1,16 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/vite"
-    },
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+  "rewrites": [
+    { "source": "/api/gene/:symbol/analytics", "destination": "/api/analytics?symbol=:symbol" },
+    { "source": "/api/gene/:symbol", "destination": "/api/gene?symbol=:symbol" },
+    { "source": "/api/gene", "destination": "/api/gene" },
+    { "source": "/api/variant/:identifier/clinical", "destination": "/api/clinical?identifier=:identifier" },
+    { "source": "/api/variant/:identifier/protein", "destination": "/api/protein?identifier=:identifier" },
+    { "source": "/api/variant/:identifier/structure", "destination": "/api/structure?identifier=:identifier" },
+    { "source": "/api/variant/:identifier/predictions", "destination": "/api/predictions?identifier=:identifier" },
+    { "source": "/api/variant/:identifier", "destination": "/api/variant?identifier=:identifier" },
+    { "source": "/api/variant", "destination": "/api/variant" },
+    { "source": "/api/compare", "destination": "/api/compare" },
+    { "source": "/api/analytics", "destination": "/api/analytics" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
