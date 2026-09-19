@@ -1,12 +1,12 @@
 {
   "rewrites": [
-    { "source": "/api/gene/:symbol/analytics", "destination": "/api/analytics?symbol=:symbol" },
-    { "source": "/api/gene/:symbol", "destination": "/api/gene?symbol=:symbol" },
-    { "source": "/api/variant/:identifier/clinical", "destination": "/api/clinical?identifier=:identifier" },
-    { "source": "/api/variant/:identifier/protein", "destination": "/api/protein?identifier=:identifier" },
-    { "source": "/api/variant/:identifier/structure", "destination": "/api/structure?identifier=:identifier" },
-    { "source": "/api/variant/:identifier/predictions", "destination": "/api/predictions?identifier=:identifier" },
-    { "source": "/api/variant/:identifier", "destination": "/api/variant?identifier=:identifier" },
+    { "source": "/api/gene/:symbol/analytics", "destination": "/api/analytics" },
+    { "source": "/api/gene/:symbol", "destination": "/api/gene" },
+    { "source": "/api/variant/:identifier/clinical", "destination": "/api/clinical" },
+    { "source": "/api/variant/:identifier/protein", "destination": "/api/protein" },
+    { "source": "/api/variant/:identifier/structure", "destination": "/api/structure" },
+    { "source": "/api/variant/:identifier/predictions", "destination": "/api/predictions" },
+    { "source": "/api/variant/:identifier", "destination": "/api/variant" },
     { "source": "/((?!api/.*).*)", "destination": "/index.html" }
   ]
 }
