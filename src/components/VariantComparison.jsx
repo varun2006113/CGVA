@@ -405,10 +405,10 @@ export default function VariantComparison({ payloadA, payloadB, comparison }) {
           <div className="grid grid-cols-1 md:grid-cols-12 p-3 hover:bg-slate-50 transition-colors">
             <div className="md:col-span-4 text-slate-600 font-sans font-semibold">CADD PHRED</div>
             <div className="md:col-span-4 font-bold text-slate-900">
-              {predA?.predictors?.cadd?.score !== null ? `PHRED ${predA.predictors.cadd.score}` : 'Not available'}
+              {predA?.predictors?.cadd?.score != null ? `PHRED ${predA.predictors.cadd.score}` : 'Not available'}
             </div>
             <div className="md:col-span-4 font-bold text-slate-900">
-              {predB?.predictors?.cadd?.score !== null ? `PHRED ${predB.predictors.cadd.score}` : 'Not available'}
+              {predB?.predictors?.cadd?.score != null ? `PHRED ${predB.predictors.cadd.score}` : 'Not available'}
             </div>
           </div>
 
